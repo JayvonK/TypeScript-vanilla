@@ -11,6 +11,6 @@ function mapArray(array) {
     })
 }
 
-// mapArray(4);
+mapArray(["4"]);
 
 // words();

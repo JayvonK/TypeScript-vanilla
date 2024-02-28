@@ -1,73 +1,40 @@
+"use strict";
 // Hovering over a variable will let you know it's current type and how you can assign a type to it if you haven't already
-let num1: number = 7;
-
+let num1 = 7;
 // You can still declare variables with a type without initializing them
-let str: string;
-
+let str;
 // We want to avoid the type 'any' because it defeats the whole purpose of typescript
 let any;
-
-function mappingGrades(data: { name: string, grades: number[]}){
-    console.log(data.name)
+function mappingGrades(data) {
+    console.log(data.name);
     return data.grades.map(ele => {
         return ele;
-    })
+    });
 }
-
 // Typing a function
-function funk(): string {
+function funk() {
     return "true";
 }
-
 // Typing an arrow function
 // Giving arrowFunction variable the type of an arrow function that returns a string
-const arrowFunction:() => string = () => {
+const arrowFunction = () => {
     return "giselle";
-}
-
-
-
-interface IStudent {
-    name: string,
-    grades: number[],
-    email: string
-}
-
-
+};
 // We can use interfaces to create our own types
-let student1: IStudent = {
+let student1 = {
     name: "giselle",
     grades: [100, 100, 100],
     email: "lover@gmail",
     pet: "gea"
-}
-
-type Giselle = {
-    name: string,
-    hobby: string
-}
-
-// We can call our interface later to add to it
-interface IStudent {
-    pet: string
-}
+};
 //Once a type is declared you can't change it again
-
 // type Giselle = {
-
 // }
-
-function createStudent(data: IStudent) {
-    let newStudent: IStudent = {
+function createStudent(data) {
+    let newStudent = {
         name: data.name,
         grades: data.grades,
         email: data.email,
         pet: data.pet
-    }
+    };
 }
-
-interface Jayvon {
-    name: string,
-    hobby: string
-}
-
