@@ -1,4 +1,5 @@
 // @ts-check
+// ts check is just accessing typescipt so that we can get errors
 
 let words = "Chair is green";
 
